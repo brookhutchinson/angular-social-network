@@ -8,12 +8,13 @@ import { HttpClientModule }        from '@angular/common/http';
 
 // components
 import { AppComponent }            from './app.component';
+import { PostCreateComponent }     from './components/post-create/post-create.component';
 
 @NgModule({
   // modules
   imports: [ AppRoutingModule, BrowserModule, BrowserAnimationsModule, FormsModule, HttpClientModule ],
   // components
-  declarations: [ AppComponent ],
+  declarations: [ AppComponent, PostCreateComponent ],
   // services
   providers: [],
   // bootstrap
