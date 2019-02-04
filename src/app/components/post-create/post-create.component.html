@@ -1,8 +1,6 @@
 <div>
-  <p>This is the PostCreateComponent!</p>
-
-  <textarea name="post" id="post" rows="6"></textarea>
+  <textarea name="post" id="post" rows="6" [(ngModel)]="enteredPost"></textarea>
   <hr>
-  <button type="button" name="addPost" id="addPost">Add Post</button>
-  <p></p>
+  <button type="button" name="addPost" id="addPost" (click)="onAddPost()">Add Post</button>
+  <p>{{ newPost }}</p>
 </div><!-- /container -->
