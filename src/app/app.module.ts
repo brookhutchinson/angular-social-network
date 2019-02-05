@@ -7,20 +7,22 @@ import { FormsModule }             from '@angular/forms';
 import { HttpClientModule }        from '@angular/common/http';
 import { MatButtonModule,
          MatCardModule,
-         MatInputModule }          from '@angular/material';
+         MatInputModule,
+         MatToolbarModule }        from '@angular/material';
 
 // components
 import { AppComponent }            from './app.component';
+import { NavbarComponent }         from './components/navbar/navbar.component';
 import { PostCreateComponent }     from './components/post-create/post-create.component';
 
 @NgModule({
   // modules
   imports: [
              AppRoutingModule, BrowserModule, BrowserAnimationsModule, FormsModule, HttpClientModule,
-             MatButtonModule, MatCardModule, MatInputModule
+             MatButtonModule, MatCardModule, MatInputModule, MatToolbarModule
            ],
   // components
-  declarations: [ AppComponent, PostCreateComponent ],
+  declarations: [ AppComponent, NavbarComponent, PostCreateComponent ],
   // services
   providers: [],
   // bootstrap
